@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#E3F2FD">
+
+    <TextView
+        android:id="@+id/textViewBillDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Bill History"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#0288D1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp" />
+
+    <ListView
+        android:id="@+id/billListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewBillDetails"
+        android:layout_alignParentBottom="true"
+        android:divider="#B3E5FC"
+        android:dividerHeight="1dp"
+        android:background="#FFFFFF"
+        android:padding="8dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:indeterminateTint="#0288D1" />
+
+</RelativeLayout>

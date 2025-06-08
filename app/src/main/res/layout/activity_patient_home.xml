@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#E3F2FD"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <!-- App Icon / Profile Icon -->
+        <ImageView
+            android:id="@+id/appIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/patient"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="App Icon" />
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp"
+            android:indeterminateTint="#0288D1" />
+
+        <!-- Welcome Text -->
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:text="Welcome!"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#0288D1"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Patient Name -->
+        <TextView
+            android:id="@+id/textName"
+            android:text="Name: "
+            android:textSize="18sp"
+            android:textColor="#0288D1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/textEmail"
+            android:text="Email: "
+            android:textSize="18sp"
+            android:textColor="#0288D1"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Book Appointment -->
+        <Button
+            android:id="@+id/btnBookAppointment"
+            android:text="Book Appointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#0288D1"
+            android:padding="12dp" />
+
+        <!-- View Treatment History -->
+        <Button
+            android:id="@+id/btnTreatmentHistory"
+            android:text="Treatment History"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#0288D1"
+            android:padding="12dp" />
+
+        <!-- View Bill History -->
+        <Button
+            android:id="@+id/btnBillHistory"
+            android:text="Bill History"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#0288D1"
+            android:padding="12dp" />
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:text="  🚪 Logout  "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#37474F"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

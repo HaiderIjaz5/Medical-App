@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Medical App</string>
+    <string-array name="doctor_specialties">
+        <item>Cardiology</item>
+        <item>Dermatology</item>
+        <item>Neurology</item>
+        <item>Pediatrics</item>
+        <item>Psychiatry</item>
+        <item>General Surgery</item>
+    </string-array>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#E3F2FD"
+    android:elevation="2dp"
+    android:layout_marginVertical="8dp"
+    android:layout_marginHorizontal="12dp"
+    android:clipToPadding="false">
+
+    <TextView
+        android:id="@+id/tvAppointmentDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Patient Name + Date/Time"
+        android:textSize="16sp"
+        android:textColor="#0288D1"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:backgroundTint="#388E3C"
+            android:textColor="#FFFFFF"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:elevation="4dp" />
+
+        <Button
+            android:id="@+id/btnReject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reject"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="12dp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:elevation="4dp" />
+    </LinearLayout>
+
+</LinearLayout>

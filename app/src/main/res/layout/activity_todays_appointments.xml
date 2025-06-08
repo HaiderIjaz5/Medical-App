@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#E3F2FD"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Heading -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:text="Today's Appointments"
+        android:textSize="24sp"
+        android:textColor="#0288D1"
+        android:textStyle="bold"
+        android:paddingBottom="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- ProgressBar centered above ListView -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:indeterminateTint="#0288D1"
+        android:layout_marginBottom="12dp" /> <!-- paddingBottom replaced for correct spacing -->
+
+    <!-- Appointments List -->
+    <ListView
+        android:id="@+id/todaysAppointmentsListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:divider="#B3E5FC"
+        android:dividerHeight="1dp"
+        android:padding="8dp" />
+
+</LinearLayout>

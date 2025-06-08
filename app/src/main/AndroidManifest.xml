@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MedicalApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".PreviewBillActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SelectAppointmentForBillingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GenerateBillActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistoryUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TodaysAppointmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PendingAppointmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TreatmentHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BillHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

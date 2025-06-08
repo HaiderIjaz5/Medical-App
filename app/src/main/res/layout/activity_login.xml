@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#E3F2FD"> <!-- Light sky blue background -->
+
+    <!-- App Icon -->
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_app_icon"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="App Icon" />
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medical App"
+        android:textColor="#0288D1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Email Field -->
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="#0288D1"
+        android:textColor="#0288D1"
+        android:textColorHint="#90CAF9"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Password Field with Toggle -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:backgroundTint="#0288D1"
+            android:textColor="#0288D1"
+            android:textColorHint="#90CAF9"
+            android:paddingEnd="48dp"
+            android:padding="12dp" />
+
+        <ImageView
+            android:id="@+id/passwordToggle"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="4dp"
+            android:src="@android:drawable/ic_menu_view"
+            android:tint="#0288D1" />
+    </RelativeLayout>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0288D1"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp" />
+
+    <!-- Progress Spinner (hidden initially) -->
+    <ProgressBar
+        android:id="@+id/loginProgress"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:indeterminateTint="#0288D1" />
+
+    <!-- Register Redirect -->
+    <TextView
+        android:id="@+id/registerRedirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No account? Register here"
+        android:textColor="#0288D1"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:paddingTop="8dp" />
+</LinearLayout>

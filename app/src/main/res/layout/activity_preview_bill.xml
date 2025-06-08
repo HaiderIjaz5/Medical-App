@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center">
+
+        <!-- 🧾 Top Heading -->
+        <ImageView
+            android:id="@+id/billIcon"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_bill"
+            android:contentDescription="Bill Icon"
+            android:layout_marginBottom="20dp" />
+
+        <!-- 📄 Scrollable Content -->
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <!-- 🧾 Bill Icon -->
+                <TextView
+                    android:id="@+id/tvMainHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bill Preview"
+                    android:textSize="26sp"
+                    android:textColor="#0288D1"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingBottom="16dp" />
+
+                <!-- 📋 Optional Sub-heading -->
+                <TextView
+                    android:id="@+id/tvPreview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Review details before confirming"
+                    android:textSize="16sp"
+                    android:textColor="#0288D1"
+                    android:gravity="center"
+                    android:paddingBottom="24dp" />
+
+                <!-- ✅ Confirm Button -->
+                <Button
+                    android:id="@+id/btnConfirmBill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✅ Confirm and Generate PDF"
+                    android:backgroundTint="#0288D1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:elevation="4dp"
+                    android:paddingVertical="12dp"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

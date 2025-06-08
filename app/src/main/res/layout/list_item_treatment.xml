@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#E3F2FD"
+    android:elevation="2dp"
+    android:layout_marginVertical="8dp"
+    android:layout_marginHorizontal="12dp"
+    android:clipToPadding="false">
+
+    <TextView
+        android:id="@+id/textViewTreatmentItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Treatment History Here"
+        android:textSize="16sp"
+        android:textColor="#0288D1"
+        android:padding="8dp"
+        android:background="#E3F2FD"
+        android:layout_marginBottom="12dp"
+        android:lineSpacingExtra="4dp" />
+
+    <!-- You can add a bottom border here if needed -->
+
+</LinearLayout>
